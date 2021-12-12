@@ -1,0 +1,27 @@
+.email {
+    display: flex;
+    justify-content: center;
+    &__link {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: $colors-accent__active;
+        &:hover {
+            color: $colors-accent;
+        }
+    }
+    &_layout {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .email {
+        align-self: center;
+        &_layout {
+            padding-bottom: 6px;
+        }
+    }
+}

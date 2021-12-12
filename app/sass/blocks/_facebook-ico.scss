@@ -1,0 +1,15 @@
+.facebook-ico {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .facebook-ico {
+        display: flex;
+        &__about-us-page path {
+            fill: $colors-grey-bg__text;
+        }
+        &:hover path {
+            fill: $colors-accent__active;
+        }
+    }
+}

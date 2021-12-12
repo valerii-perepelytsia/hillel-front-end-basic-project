@@ -1,0 +1,132 @@
+.service {
+    display: flex;
+    flex-wrap: wrap;
+    width: 336px;
+    &__image-block {
+        padding-bottom: 0;
+        &_service-page {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 27px;
+            margin-bottom: 10px;
+        }
+    }
+    &__icon-container {
+        width: 64px;
+        height: 64px;
+        background: white;
+        border-radius: 18px;
+        padding: 10px;
+        &_service-page {
+            width: 92px;
+            height: 92px;
+            padding: 14px;
+        }
+    }
+    &__icon {
+        &_service-page {
+            width: 64px;
+            height: 64px;
+        }
+    }
+    &__link {
+        width: 77%;
+        align-self: center;
+        text-decoration: none;
+    }
+    &__h3-heading {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        align-items: center;
+        color: $colors-accent__active;
+        &_service-page {
+            font-size: 32px;
+            line-height: 38px;
+            color: $colors-accent;
+            padding-bottom: 22px;
+        }
+        &:hover {
+            color: $colors-accent;
+        }
+    }
+    &__text {
+        display: block;
+        font-size: 16px;
+        line-height: 22px;
+        color: white;
+        &_service-page {
+            font-size: 18px;
+            line-height: 26px;
+            white-space: pre-line;
+            padding-bottom: 21px;
+        }
+        &_layout {
+            padding: 10px 0 40px 0;
+        }
+    }
+    &:last-of-type > &__text {
+        padding: 10px 0 21px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .service {
+        flex-direction: column;
+        width: 33.333%;
+        padding: 0 12px 60px 12px;
+        &__image-block {
+            padding-bottom: 20px;
+            &_service-page {
+                justify-content: center;
+                margin-top: 8px;
+            }
+        }
+        &:nth-last-of-type(-n+3) {
+            padding-bottom: 0;
+        }
+        &__icon-container {
+            width: 92px;
+            height: 92px;
+            padding: 14px;
+        }
+        &__icon {
+            width: 64px;
+            height: 64px;
+        }
+        &__link {
+            width: 86%;
+            align-self: flex-start;
+            &_layout {
+                margin: 0;
+                padding-bottom: 15px;
+            }
+        }
+        &__h3-heading {
+            font-size: 24px;
+            line-height: 28px;
+            &_service-page {
+                font-size: 41px;
+                line-height: 50px;
+                text-align: center;
+                color: $colors-accent;
+                padding-bottom: 20px;
+            }
+        }
+        &__text {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+            &_service-page {
+                font-size: 21px;
+                line-height: 30px;
+                text-align: center;
+                margin: 0 238px;
+                padding-bottom: 20px;
+            }
+            &_layout {
+                padding: 0;
+            }
+        }
+    }
+}

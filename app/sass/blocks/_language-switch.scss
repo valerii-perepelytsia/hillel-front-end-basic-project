@@ -1,0 +1,56 @@
+.language-switch {
+    font-size: 0;
+    display: flex;
+    &__link {
+        display: inline-block;
+        vertical-align: top;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 5px;
+        border-radius: 8px;
+        color: white;
+        &_accent {
+            background-color: $colors-accent;
+            color: white;
+        }
+        &:hover {
+            background-color: $colors-grey-bg__text;
+        }
+    }
+    &__about-us-page {
+        display: inline-block;
+        vertical-align: top;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        padding: 5px;
+        border-radius: 8px;
+        color: $colors-grey-bg__text;
+        &:hover {
+            background-color: $colors-grey-bg__bg_alt;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .language-switch {
+        &::after {
+            content: "";
+            align-self: center;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin: 0 5px;
+            background: $colors-grey-bg__separator;
+        }
+    }
+}

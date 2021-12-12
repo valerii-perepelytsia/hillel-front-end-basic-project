@@ -1,0 +1,29 @@
+.link-on-map {
+    display: flex;
+    justify-content: center;
+    &__link {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colors-accent__active;
+        &:hover {
+            color: $colors-accent;
+        }
+    }
+    &_layout {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .link-on-map {
+        align-self: center;
+        &_layout {
+            padding: 0;
+        }
+    }
+}

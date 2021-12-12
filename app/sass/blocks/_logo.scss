@@ -1,0 +1,113 @@
+.logo {
+    grid-area: 2 / 1 / 3 / 2;
+    &_service {
+        display: flex;
+    }
+    &__service-text {
+        display: flex;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 22px;
+        color: white;
+        &_about-us-page {
+            color: $colors-main;
+            white-space: nowrap;
+        }
+        &::before {
+            content: "";
+            background-image: url("../img/slash-mobile.svg");
+            width: 11px;
+            height: 24px;
+        }
+        &::after {
+            content: "";
+            background-image: url("../img/symbol-slash-mobile.svg");
+            width: 21px;
+            height: 24px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        &_service {
+            display: flex;
+        }
+        &_about-us path {
+            fill: $colors-main;
+        }
+        &_about-us .about-us-logo-h {
+            fill: $colors-accent;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        grid-area: 2 / 1 / 3 / 2;
+        &__service-text {
+            display: flex;
+            font-weight: 400;
+            font-size: 38px;
+            line-height: 45px;
+            &::before {
+                background-image: url("../img/slash.svg");
+                width: 21px;
+                height: 46px;
+            }
+            &::after {
+                background-image: url("../img/symbol-slash.svg");
+                width: 41px;
+                height: 46px;
+            }
+        }
+        &__link {
+            & svg {
+                width: 155px;
+                height: 61px;
+            }
+            &_about-us path {
+                width: 155px;
+                height: 61px;
+            }
+            &_about-us .about-us-logo-h {
+                width: 155px;
+                height: 61px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        grid-area: 1 / 1 / 3 / 2;
+        &__service-text {
+            display: flex;
+            font-weight: 400;
+            font-size: 38px;
+            line-height: 45px;
+            &::before {
+                background-image: url("../img/slash.svg");
+                width: 21px;
+                height: 46px;
+            }
+            &::after {
+                background-image: url("../img/symbol-slash.svg");
+                width: 41px;
+                height: 46px;
+            }
+        }
+        &__link {
+            & svg {
+                width: 155px;
+                height: 61px;
+            }
+            &_about-us path {
+                width: 155px;
+                height: 61px;
+            }
+            &_about-us .about-us-logo-h {
+                width: 155px;
+                height: 61px;
+            }
+        }
+    }
+}

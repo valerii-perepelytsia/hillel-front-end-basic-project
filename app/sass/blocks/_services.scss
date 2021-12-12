@@ -1,0 +1,56 @@
+.services {
+    &__link {
+        display: inline-flex;
+        text-decoration: none;
+        &_layout {
+            padding-bottom: 3px;
+        }
+    }
+    &__h3-heading {
+        display: inline-flex;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: white;
+        opacity: 0.5;
+        &::after {
+            content: url("../img/arrow-link.svg");
+            width: 8px;
+            height: 12px;
+            margin-left: 5px;
+        }
+    }
+    &__text-wrap {
+        white-space: nowrap;
+    }
+    &__h2-heading {
+        font-size: 32px;
+        line-height: 38px;
+        color: $colors-accent;
+        &_layout {
+            padding-bottom: 18px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .services {
+        &__text-wrap {
+            white-space: wrap;
+        }
+        &__h2-heading {
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 50px;
+            &_layout {
+                padding-bottom: 79px;
+            }
+        }
+        &__articles-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -20px;
+        }
+    }
+}

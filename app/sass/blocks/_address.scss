@@ -1,0 +1,102 @@
+.address {
+    &__text {
+        font-style: normal;
+        font-size: 16px;
+        line-height: 19px;
+        &_footer {
+            text-align: center;
+            color: $colors-main;
+        }
+        &_header {
+            &_about-us-page {
+                color: $colors-grey-bg__text;
+            }
+        }
+    }
+    &__span {
+        font-weight: bold;
+    }
+    &_header {
+        display: none;
+    }
+    &_footer {
+        padding: 20px 0 10px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .address {
+        &_header {
+            display: flex;
+            text-align: right;
+            color: white;
+            &::after {
+                content: "";
+                align-self: center;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                margin: 0 8px;
+                background: $colors-grey-bg__separator;
+            }
+        }
+        &_footer {
+            display: flex;
+            text-align: left;
+            padding: 0;
+            &::after {
+                content: "";
+                align-self: center;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                margin: 0 8px;
+                background: $colors-grey-bg__text;
+            }
+        }
+        &__span {
+            font-weight: normal;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .address {
+        &_header {
+            display: flex;
+            text-align: right;
+            color: white;
+            &::after {
+                content: "";
+                align-self: center;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                margin: 0 8px;
+                background: $colors-grey-bg__separator;
+            }
+        }
+        &_footer {
+            display: flex;
+            text-align: left;
+            padding: 0;
+            &::after {
+                content: "";
+                align-self: center;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                margin: 0 8px;
+                background: $colors-grey-bg__text;
+            }
+        }
+        &__span {
+            font-weight: normal;
+        }
+        &__text {
+            &_footer {
+                padding-right: 31px;
+            }
+        }
+    }
+}

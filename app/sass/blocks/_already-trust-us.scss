@@ -1,0 +1,152 @@
+.already-trust-us {
+    min-width: 376px;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__h3-heading {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        color: $colors-main;
+        &_layout {
+            padding-bottom: 30px;
+            margin-right: 15px;
+        }
+    }
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 90px;
+        &_hillel {
+            background: #1c4280;
+        }
+        &_wannabiz {
+            background: #143646;
+        }
+        &_tapgerine {
+            background: #f48b30;
+        }
+        &_3dlook {
+            background: #9e4dc3;
+        }
+        &_orangear {
+            background: #fd9339;
+        }
+        &_adtelligent {
+            background: #e2e2e4;
+        }
+        &_clickky {
+            background: #c71c36;
+        }
+        &_ecoleasing {
+            background: #dcf3f9;
+        }
+        &_infratek {
+            background: #eaeaea;
+        }
+        &_city-park {
+            background: #282240;
+        }
+        &_art-print-studio {
+            background: #1d4568;
+        }
+        &_ultimate-card {
+            background: #000;
+        }
+    }
+    &__image {
+        align-self: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .already-trust-us {
+        &__image-container {
+            width: 25%;
+            height: 120px;
+            &_hillel {
+                .already-trust-us__image {
+                    width: 217px;
+                    height: 48px;
+                }
+            }
+            &_wannabiz {
+                .already-trust-us__image {
+                    width: 199px;
+                    height: 32px;
+                }
+            }
+            &_tapgerine {
+                .already-trust-us__image {
+                    width: 179px;
+                    height: 44px;
+                }
+            }
+            &_3dlook {
+                .already-trust-us__image {
+                    width: 180px;
+                    height: 42px;
+                }
+            }
+            &_orangear {
+                .already-trust-us__image {
+                    width: 174px;
+                    height: 44px;
+                }
+            }
+            &_adtelligent {
+                .already-trust-us__image {
+                    width: 187px;
+                    height: 48px;
+                }
+            }
+            &_clickky {
+                .already-trust-us__image {
+                    width: 138px;
+                    height: 61px;
+                }
+            }
+            &_ecoleasing {
+                .already-trust-us__image {
+                    width: 146px;
+                    height: 76px;
+                }
+            }
+            &_infratek {
+                .already-trust-us__image {
+                    width: 182px;
+                    height: 60px;
+                }
+            }
+            &_city-park {
+                .already-trust-us__image {
+                    width: 181px;
+                    height: 38px;
+                }
+            }
+            &_art-print-studio {
+                .already-trust-us__image {
+                    width: 189px;
+                    height: 46px;
+                }
+            }
+            &_ultimate-card {
+                .already-trust-us__image {
+                    width: 152px;
+                    height: 95px;
+                }
+            }
+        }
+        &__h3-heading {
+            &_layout {
+                margin-right: 0;
+            }
+        }
+    }
+}

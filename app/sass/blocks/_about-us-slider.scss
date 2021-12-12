@@ -1,0 +1,140 @@
+.about-us-slider {
+    &__h3-heading {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colors-accent;
+        &_layout {
+            padding: 41px 0 10px 0;
+        }
+    }
+    &__tab-list {
+        display: none;
+        list-style: none;
+    }
+    &__list-item {
+        border-right: 4px solid $colors-grey-bg__separator;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+        &:hover {
+            color: $colors-accent;
+        }
+        &_active {
+            color: $colors-accent;
+            border-right: 4px solid $colors-accent;
+        }
+    }
+    &__link {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 50px;
+        color: $colors-grey-bg__text;
+        &:hover {
+            color: $colors-accent;
+        }
+        &_active {
+            color: $colors-accent;
+        }
+    }
+    &__h2-heading {
+        font-size: 22px;
+        line-height: 26px;
+        color: white;
+        &_layout {
+            padding-bottom: 15px;
+        }
+    }
+    &__paragraph {
+        font-size: 18px;
+        line-height: 26px;
+        color: white;
+    }
+    &__dots {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        &_layout {
+            padding-top: 12px;
+            padding-bottom: 45px;
+        }
+    }
+    &__item {
+        font-size: 0;
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        background: $colors-accent__active;
+        opacity: 0.2;
+        border: none;
+        border-radius: 50%;
+        margin: 0 7px;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    &__item_active {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-us-slider {
+        display: grid;
+        grid-template-columns: repeat(2, min-content auto);
+        grid-template-rows: repeat(4, min-content auto);
+        grid-column-gap: 40px;
+        &__h3-heading {
+            display: none;
+        }
+        &__tab-list {
+            grid-area: 1 / 1 / 6 / 2;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            padding: 0;
+            margin-left: 135px;
+        }
+        &__list-item {
+            padding-right: 38px;
+            padding-bottom: 20px;
+        }
+        &__article {
+            grid-area: 1 / 2 / 6 / 3;
+            align-self: center;
+            margin-right: 43px;
+        }
+        &__h2-heading {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 38px;
+            &_layout {
+                padding-top: 10px;
+            }
+        }
+        &__paragraph {
+            font-size: 21px;
+            line-height: 30px;
+        }
+        &__dots {
+            display: none;
+            &_layout {
+                padding-top: 0;
+                padding-bottom: 45px;
+            }
+        }
+        &__item {
+            margin: 0 14px;
+        }
+        &_layout {
+            padding-bottom: 80px;
+        }
+    }
+}

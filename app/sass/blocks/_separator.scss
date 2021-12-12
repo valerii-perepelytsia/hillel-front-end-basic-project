@@ -1,0 +1,21 @@
+.separator {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    &__top-block {
+        background: #cacadb;
+        border-radius: 0 0 12px 12px;
+        width: 90%;
+        height: 10px;
+    }
+    &__bottom-block {
+        background: #e7e7f2;
+        border-radius: 0 0 12px 12px;
+        width: 80%;
+        height: 10px;
+    }
+    &_layout {
+        padding-bottom: 20px;
+    }
+}

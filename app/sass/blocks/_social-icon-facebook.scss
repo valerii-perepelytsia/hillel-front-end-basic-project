@@ -1,0 +1,32 @@
+.social-icon-facebook {
+    display: flex;
+    justify-content: center;
+    &__link {
+        text-decoration: none;
+    }
+    &__icon {
+        &:hover path {
+            fill: $colors-accent;
+        }
+    }
+    &_layout {
+        padding-bottom: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .social-icon-facebook {
+        &::after {
+            content: "";
+            align-self: center;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin: 0 8px;
+            background: $colors-grey-bg__text;
+        }
+        &_layout {
+            padding: 0;
+        }
+    }
+}

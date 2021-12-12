@@ -1,0 +1,13 @@
+.hamburger {
+    grid-area: 2 / 2 / 3 / 3;
+    justify-self: end;
+    &__icon path {
+        stroke: #323264;
+    }
+}
+
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+}

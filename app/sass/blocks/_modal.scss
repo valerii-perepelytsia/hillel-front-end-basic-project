@@ -1,0 +1,98 @@
+.modal {
+    display: none;
+    width: 375px;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+    background: $colors-grey-bg;
+    border-radius: 12px;
+    transition: all 0.5s;
+    z-index: 999;
+    filter: drop-shadow(0 15px 80px rgba(40, 40, 86, 0.5));
+    &.show {
+        display: block;
+    }
+    &__h2-heading {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: $colors-accent;
+    }
+    &__close-button {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: $colors-grey-bg;
+        border: none;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__input-text {
+        width: 335px;
+        border: none;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 10px 0 10px 0;
+        resize: none;
+        transition: all 0.5s;
+        &::placeholder {
+            font-family: "TT Norms", "Arial", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 26px;
+            color: $colors-grey-bg__text;
+        }
+    }
+    &__submit-button {
+        cursor: pointer;
+        background: $colors-accent__active;
+        box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+        border: none;
+        border-radius: 12px;
+        margin: 10px 0 85px 0;
+        &[type=submit] {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: white;
+            padding: 17px 66px;
+        }
+    }
+    &__h3-heading {
+        align-self: flex-start;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $colors-grey-bg__text;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal {
+        width: 527px;
+        &__h2-heading {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        &__input-text {
+            width: 487px;
+        }
+        &__submit-button {
+            margin: 10px 0 20px 0;
+        }
+    }
+}

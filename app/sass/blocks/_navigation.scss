@@ -1,0 +1,98 @@
+.navigation {
+    &_alternative {
+        grid-area: 3 / 1 / 4 / 3;
+        display: none;
+        flex-direction: column;
+    }
+    &__logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__image-container {
+        margin-left: 48%;
+    }
+    &__close-button {
+        cursor: pointer;
+        background: white;
+        border: none;
+    }
+    &_header {
+        display: none;
+    }
+    &__list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        &_alternative {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__list-item {
+        margin-left: 15px;
+        &:first-of-type {
+            margin: 0;
+        }
+        &_alternative {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: $colors-grey-bg;
+            padding: 11px 0 15px 0;
+            border-bottom: 1px solid white;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: right;
+        color: white;
+        &_about-us-page {
+            color: $colors-accent__active;
+            &:hover {
+                color: $colors-accent;
+            }
+        }
+        &_active {
+            border-bottom: 2px solid white;
+        }
+        &_about-us-active {
+            color: $colors-accent;
+            border-bottom: 2px solid $colors-accent;
+        }
+        &_alternative {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: $colors-accent__active;
+            &:hover {
+                color: $colors-accent;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        &_header {
+            display: grid;
+            grid-area: 3 / 1 / 4 / 2;
+            justify-self: start;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navigation {
+        &_header {
+            display: grid;
+            grid-area: 2 / 2 / 3 / 5;
+            justify-self: end;
+        }
+    }
+}
