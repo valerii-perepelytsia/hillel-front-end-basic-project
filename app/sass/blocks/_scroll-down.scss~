@@ -17,6 +17,7 @@
 
 @media (min-width: 768px) {
     .scroll-down {
+        grid-area: 5 / 1 / 6 / 2;
         &__link {
             display: inline-block;
             vertical-align: top;
@@ -29,5 +30,11 @@
         &_layout {
             padding-bottom: 77px;
         }
+    }
+}
+
+@media (min-width: 992px) {
+    .scroll-down {
+        grid-area: 4 / 1 / 5 / 5;
     }
 }

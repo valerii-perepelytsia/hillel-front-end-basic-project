@@ -51,11 +51,11 @@
         line-height: 21px;
         text-align: right;
         color: white;
-        &:hover {
-            color: $colors-accent;
-        }
         &_about-us-page {
             color: $colors-accent__active;
+            &:hover {
+                color: $colors-accent;
+            }
         }
         &_active {
             border-bottom: 2px solid white;

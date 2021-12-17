@@ -110,8 +110,8 @@
                             </div>
                         </div>
                         <a class="service__link service__link_layout" href="#">
-                            <h1 class="service__h3-heading
-                                service__h3-heading_service-page">IT та електронна комерція</h1>
+                            <h3 class="service__h3-heading
+                                service__h3-heading_service-page">IT та електронна комерція</h3>
                         </a>
                         <p class="service__text
                         service__text_service-page">Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста.</p> 

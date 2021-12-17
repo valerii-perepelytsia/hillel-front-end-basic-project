@@ -45,7 +45,7 @@
         }
     }
     &__article {
-        /*max-width: 335px;*/
+        max-width: 335px;
         background-color: white;
         border-radius: 8px;
     }
@@ -131,8 +131,8 @@
             margin: 0 -20px;
         }
         &__article {
-            /*min-width: 335px;
-            max-width: 414px;*/
+            min-width: 335px;
+            max-width: 414px;
         }
         &__article-container {
             width: 33.333%;

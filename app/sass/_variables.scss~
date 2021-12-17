@@ -9,5 +9,5 @@ $colors-grey-bg: #f5f5fa;
 $colors-grey-bg__bg_alt: #ededf7;
 $colors-grey-bg__text: #b3b3ba;
 $colors-grey-bg__separator: #e6e6f0;
-$gradient-soft: linear-gradient(10deg, #323264 14.33%, #323264 65%, #7a425e 87.53%);
+$gradient-soft: linear-gradient(10deg, #323264 14.33%, #323264 51.39%, #7a425e 87.53%);
 $gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);

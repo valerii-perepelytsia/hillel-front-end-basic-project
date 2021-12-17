@@ -1,8 +1,5 @@
 .services-container {
     position: relative;
-    background-image: url("../img/background-logo.svg"), $gradient-supersoft;
-    background-position: 50% 0, 50% 0;
-    background-repeat: no-repeat;
     border-radius: 0 0 12px 12px;
     &::after {
         content: '';

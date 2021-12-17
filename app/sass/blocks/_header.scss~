@@ -1,5 +1,6 @@
 .header {
     background-image: $gradient-soft;
+    background-repeat: no-repeat;
     &_service-page {
         background-image: url("../img/service-background.png"), $gradient-supersoft;
         background-position: top;
@@ -73,7 +74,7 @@
 
 @media (min-width: 992px) {
     .header {
-        background-image: $gradient-soft;
+        background-image: url("../img/background.svg"), url("../img/background-logo.svg"), $gradient-soft;
         &_service-page {
             background-image: url("../img/service-background.png"), $gradient-supersoft;
         }

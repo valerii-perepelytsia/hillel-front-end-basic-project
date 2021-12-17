@@ -1,6 +1,7 @@
 .service {
     display: flex;
     flex-wrap: wrap;
+    width: 336px;
     &__image-block {
         padding-bottom: 0;
         &_service-page {
