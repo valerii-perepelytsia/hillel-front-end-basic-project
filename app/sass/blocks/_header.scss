@@ -1,0 +1,108 @@
+.header {
+    background-image: $gradient-soft;
+    &_service-page {
+        background-image: url("../img/service-background.png"), $gradient-supersoft;
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+            background-image: url("../img/service-background@2x.png"), $gradient-supersoft;
+        }
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 0 0 12px 12px;
+        padding: 20px 0;
+    }
+    &_about-us {
+        background-image: none;
+        background-color: white;
+        padding: 20px 0 26px 0;
+    }
+    &__grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 17px;
+        &_about-us-page {
+            grid-template-rows: repeat(2, auto);
+        }
+    }
+    &__info-container {
+        grid-area: 1 / 1 / 2 / 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__heading-container {
+        grid-area: 3 / 1 / 4 / 3;
+        &_layout {
+            padding: 127px 0 185px 0;
+        }
+    }
+    &__main-heading {
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 45px;
+        text-align: center;
+        color: white;
+    }
+    &_layout {
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        &__grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, auto);
+            grid-row-gap: 17px;
+            &_about-us-page {
+                grid-template-rows: repeat(4, auto);
+            }
+        }
+        &__info-container {
+            grid-area: 1 / 1 / 2 / 2;
+            justify-content: flex-start;
+        }
+        &__heading-container {
+            grid-area: 4 / 1 / 5 / 2;
+            &_layout {
+                padding: 227px 0 271px 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        background-image: $gradient-soft;
+        &_service-page {
+            background-image: url("../img/service-background.png"), $gradient-supersoft;
+            @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+                background-image: url("../img/service-background@2x.png"), $gradient-supersoft;
+            }
+        }
+        &_about-us {
+            background-image: none;
+            background-color: white;
+            padding-bottom: 47px;
+        }
+        &__grid-container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &__info-container {
+            grid-area: 1 / 2 / 2 / 5;
+            justify-content: flex-end;
+        }
+        &__heading-container {
+            grid-area: 3 / 1 / 4 / 5;
+            &_layout {
+                padding: 227px 0 271px 0;
+            }
+        }
+        &__main-heading {
+            margin: 0 360px;
+        }
+    }
+}
