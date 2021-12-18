@@ -339,15 +339,19 @@ a {
 }
 
 .logo__service-text::before {
-  content: "";
-  background-image: url("../img/slash-mobile.svg");
+  content: url("../img/slash.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 11px;
   height: 24px;
 }
 
 .logo__service-text::after {
-  content: "";
-  background-image: url("../img/symbol-slash-mobile.svg");
+  content: url("../img/symbol-slash.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 21px;
   height: 24px;
 }
@@ -383,12 +387,11 @@ a {
     line-height: 45px;
   }
   .logo__service-text::before {
-    background-image: url("../img/slash.svg");
     width: 21px;
     height: 46px;
   }
   .logo__service-text::after {
-    background-image: url("../img/symbol-slash.svg");
+    background-size: 41px 46px;
     width: 41px;
     height: 46px;
   }
@@ -419,14 +422,10 @@ a {
     line-height: 45px;
   }
   .logo__service-text::before {
-    background-image: url("../img/slash.svg");
-    width: 21px;
-    height: 46px;
+    background-size: 21px 46px;
   }
   .logo__service-text::after {
-    background-image: url("../img/symbol-slash.svg");
-    width: 41px;
-    height: 46px;
+    background-size: 41px 46px;
   }
   .logo__link svg {
     width: 155px;
@@ -2409,6 +2408,15 @@ a {
   .banner {
     height: 439px;
   }
+}
+
+@media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 992px) and (min-resolution: 144dpi), (min-width: 992px) and (min-resolution: 1.5dppx) {
+  .banner {
+    background-image: url("../img/team@2x.jpg");
+  }
+}
+
+@media (min-width: 992px) {
   .banner__text {
     font-size: 96px;
     line-height: 113px;

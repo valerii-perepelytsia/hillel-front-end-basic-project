@@ -29,7 +29,7 @@
                                 contact-phone__link_white" href="tel:+380503901595">+38 (050) 390 15 95</a>
                         </div>
                         <div class="facebook-ico facebook-ico_header">
-                            <a class="facebook-ico__link" href="">
+                            <a aria-label="Наша сторінка у фейсбуці" class="facebook-ico__link" href="">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_1594_2110)">
                                         <path d="M24 12.1958C24 5.61639 18.6274 0.282776 12 0.282776C5.37258 0.282776 0 5.61639 0 12.1958C0 18.1419 4.38823 23.0703 10.125 23.964V15.6393H7.07812V12.1958H10.125V9.57118C10.125 6.58549 11.9165 4.93628 14.6576 4.93628C15.9705 4.93628 17.3438 5.16896 17.3438 5.16896V8.10067H15.8306C14.3399 8.10067 13.875 9.01897 13.875 9.96107V12.1958H17.2031L16.6711 15.6393H13.875V23.964C19.6118 23.0703 24 18.1419 24 12.1958Z" fill="white"/>
@@ -96,7 +96,6 @@
                                     class="navigation__link" href="#">контакти</a></li>
                         </ul>
                     </nav>
-                    
                 </div>
             </div>
         </header>
@@ -108,7 +107,7 @@
                         <h1 class="header__main-heading">системний адміністратор правових рішень</h1>
                     </div>
                     <div class="scroll-down scroll-down_layout">
-                        <a class="scroll-down__link" href="#service-anchor">
+                        <a aria-label="До розділу послуги" class="scroll-down__link" href="#service-anchor">
                             <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1L10 10L19 1" stroke="white" stroke-width="2"/>
                             </svg>
@@ -142,10 +141,10 @@
                         </article>
                         <ul class="about-us-slider__dots 
                             about-us-slider__dots_layout">
-                            <li><button type="button" class="about-us-slider__item about-us-slider__item_active">1</button></li>
-                            <li><button type="button" class="about-us-slider__item">2</button></li>
-                            <li><button type="button" class="about-us-slider__item">3</button></li>
-                            <li><button type="button" class="about-us-slider__item">4</button></li>
+                            <li><button aria-label="поточний слайд" type="button" class="about-us-slider__item about-us-slider__item_active">1</button></li>
+                            <li><button aria-label="наступний слайд" type="button" class="about-us-slider__item">2</button></li>
+                            <li><button aria-label="наступний слайд" type="button" class="about-us-slider__item">3</button></li>
+                            <li><button aria-label="наступний слайд" type="button" class="about-us-slider__item">4</button></li>
                         </ul>
                     </section>
                     <section id="service-anchor" class="services">
@@ -240,9 +239,11 @@
                 <div class="container">
                     <article class="team-slider__article">
                         <picture class="team-slider__picture team-slider__picture_layout">
-                           <source media="(min-width: 992px)" srcset="img/managing-partner-desktop.jpg">
+                           <source media="(min-width: 992px)"
+                           srcset="img/managing-partner-desktop.jpg 1x, img/managing-partner-desktop@2x.jpg 2x">
                            <source media="(min-width: 768px)" srcset="img/managing-partner.png">
-                           <img class="team-slider__image" src="img/managing-partner.png" alt="managing-partner">
+                           <img class="team-slider__image"
+                           src="img/managing-partner.png" alt="managing-partner">
                         </picture>
                             <h3 class="team-slider__h3-heading
                                 team-slider__h3-heading_layout"><a
@@ -398,7 +399,9 @@
                                     publications__picture-container_layout">
                                     <a class="publications__link" href="#">
                                         <picture class="publications__picture">
-                                           <source media="(min-width: 992px)" srcset="img/people-desktop.png">
+                                           <source media="(min-width: 992px)"
+                                           srcset="img/people-desktop.png 1x,
+                                           img/people-desktop@2x.png 2x">
                                            <source media="(min-width: 768px)" srcset="img/people.png">
                                            <img class="publications__image img-responsive" src="img/people.png" alt="people">
                                         </picture>
@@ -419,7 +422,10 @@
                                     publications__picture-container_layout">
                                     <a class="publications__link" href="#">
                                         <picture class="publications__picture">
-                                           <source media="(min-width: 992px)" srcset="img/conference-desktop.png">
+                                           <source media="(min-width: 992px)"
+                                           srcset="img/conference-desktop.png
+                                           1x, img/conference-desktop@2x.png
+                                           2x">
                                            <source media="(min-width: 768px)" srcset="img/conference.png">
                                            <img class="publications__image img-responsive" src="img/conference.png" alt="conference">
                                         </picture>
@@ -443,7 +449,8 @@
                                     <a class="publications__link" href="#">
                                         <picture class="publications__picture">
                                            <source media="(min-width: 992px)"
-                                           srcset="img/gdpr.png">
+                                           srcset="img/gdpr.png 1x,
+                                           img/gdpr@2x.png 2x">
                                            <img class="publications__image img-responsive" src="img/gdpr.png" alt="gdpr">
                                         </picture>
                                     </a>
@@ -562,7 +569,7 @@
                         <div class="footer__contacts-container
                             footer__contacts-container_layout">
                             <div class="social-icon-facebook social-icon-facebook_layout">
-                                <a class="social-icon-facebook__link" href="">
+                                <a aria-label="Наша сторінка у фейсбуці" class="social-icon-facebook__link" href="">
                                     <svg class="social-icon-facebook__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_1579_1566)">
                                             <path d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z" fill="#24A3FF"/>
